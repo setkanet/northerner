@@ -1,0 +1,12 @@
+{
+  "icons": [
+    {
+      "src": "./img/favicons/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "name": "Интернет-магазин 'Северяночка'",
+  "short_name": "'Северяночка'",
+  "description": "Интернет-магазин продуктов 'Северяночка'"
+}
