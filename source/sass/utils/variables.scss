@@ -1,3 +1,41 @@
 /* Colors */
 
 $text: #414141;
+
+/* Fonts */
+
+$text-xs: 8px;
+$text-s: 12px;
+$text-m: 14px;
+$text-l: 20px;
+$text-xl: 32px;
+
+$text-xs-desktop: 12px;
+$text-s-desktop: 14px;
+$text-m-desktop: 14px;
+$text-l-desktop: 24px;
+$text-xl-desktop: 36px;
+
+$header-xs: 16px;
+$header-s: 20px;
+$header-m: 24px;
+$header-l: 36px;
+$header-xl: 48px;
+
+$header-xs-desktop: 18px;
+$header-s-desktop: 24px;
+$header-m-desktop: 36px;
+$header-l-desktop: 48px;
+$header-xl-desktop: 64px;
+
+$family: "Rubik", "Aria", sans-serif;
+$regular: 400;
+$bold: 700;
+
+
+/* container */
+$mobile: 320px;
+$mobile-end: 767.98px;
+$tablet: 768px;
+$desktop: 1440px;
+$line-height: 1.5;

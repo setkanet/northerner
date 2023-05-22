@@ -1,9 +1,9 @@
-/* GLOBAL */
+/* UTILS */
 @import "utils/variables";
 @import "utils/mixins";
-/* UTILS */
+/* GLOBAL */
 @import "global/fonts";
 @import "global/global";
 
 /* BLOCKS */
-@import "blocks/header";
+@import "components/header";
