@@ -1,3 +1,67 @@
-p {
-  @include font($bold, $text-xl);
+.header {
+  background-color: $surface;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+  padding: 8px;
+
+  @media (min-width: $tablet) {
+    padding: 4px 11px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 11;
+  }
+}
+
+.nav__btn-catalog {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav__search {
+  width: 261px;
+  height: 40px;
+  padding: 8px 16px;
+  @include font($regular, $header-xs);
+  color: $hard;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+
+
+  @media (min-width: $tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 374px;
+  }
+
+
+}
+
+.nav__search-label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/search.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }

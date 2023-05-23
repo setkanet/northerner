@@ -1,4 +1,24 @@
-<header>
-  <p>удача !</p>
-  <img src="@img/logo.svg" alt="">
+<header class="header">
+  <div class="container">
+    <nav class="header__nav nav">
+      <a href="#0" class="nav__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="@img/header-logo-desktop.svg" loading="lazy" width="152" height="32">
+          <source media="(min-width: 768px)" srcset="@img/header-logo-mobile.svg" width="49" height="40">
+          <img src="@img/header-logo-mobile.svg" alt="" loading="lazy" width="39" height="32">
+        </picture>
+      </a>
+      <button class="nav__btn-catalog">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="@img/btn-catalog-desktop.svg" loading="lazy" width="140" height="40">
+          <img src="@img/btn-catalog-tablet.svg" alt="" loading="lazy" width="40" height="40">
+        </picture>
+      </button>
+      <form action="">
+        <label class="nav__search-label"><input class="nav__search" type="search" placeholder="Найти товар"></label>
+      </form>
+    </nav>
+  </div>
+
+  </div>
 </header>

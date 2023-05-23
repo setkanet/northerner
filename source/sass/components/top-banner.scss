@@ -1,0 +1,84 @@
+.top-banner {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $surface;
+    background-image: url("../../img/pattern-banner-mobile.webp");
+    background-repeat: repeat-x;
+    background-size: 104px 80px;
+    height: 80px;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+    filter: drop-shadow(5px 11px 16px rgba(0, 0, 0, 0.2));
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/pattern-banner-mobile@2x.webp");
+    }
+
+
+    @media (min-width: $tablet) {
+      background-image: url("../../img/pattern-banner-tablet.webp");
+      background-size: 164px 164px;
+      height: 164px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/pattern-banner-tablet@2x.webp");
+      }
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../../img/pattern-banner.webp");
+      background-size: 252px 200px;
+      height: 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/pattern-banner@2x.webp");
+      }
+    }
+
+  }
+
+}
+
+.top-banner__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.top-banner__picture {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    margin-top: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: -20px;
+  }
+
+}
+
+.top-banner__slogan {
+  @include font($bold, $header-xs-desktop);
+
+  margin: auto;
+  transform: translate(0%, 100%);
+
+  @media (min-width: $tablet) {
+    @include font($bold, $header-s-desktop);
+    margin: 0;
+    transform: none;
+  }
+
+
+  @media (min-width: $desktop) {
+    @include font($bold, $header-l-desktop);
+  }
+}
