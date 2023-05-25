@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   background-color: $surface;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -7,24 +9,37 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  column-gap: 20px;
-  padding: 8px;
+  padding: 8px 2px 8px 9px;
 
   @media (min-width: $tablet) {
-    padding: 4px 11px;
+    padding: 12px 2px 12px 9px;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 11;
+    padding: 10px 2px 12px 9px;
+    ;
+  }
+}
+
+.nav__logo {
+  margin-right: 20px;
+
+  @media (min-width: $desktop) {
+    margin-right: 41px;
   }
 }
 
 .nav__btn-catalog {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: block;
+    margin-right: 21px;
     cursor: pointer;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 18px;
   }
 }
 
@@ -37,7 +52,6 @@
   border: 1px solid #70C05B;
   border-radius: 4px;
 
-
   @media (min-width: $tablet) {
     width: 324px;
   }
@@ -45,8 +59,6 @@
   @media (min-width: $desktop) {
     width: 374px;
   }
-
-
 }
 
 .nav__search-label {
@@ -56,7 +68,7 @@
     content: "";
     position: absolute;
     top: -3px;
-    right: 16px;
+    right: 8px;
     width: 24px;
     height: 24px;
     background-image: url("../../img/search.svg");
@@ -64,4 +76,105 @@
     background-repeat: no-repeat;
   }
 
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 40px;
+  }
+}
+
+.nav__user-menu {
+  display: none;
+
+  @media (min-width: $tablet) {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 40px;
+    column-gap: 25px;
+  }
+}
+
+.user-menu__item {
+  position: relative;
+
+  &:last-child::after {
+    content: "2";
+    position: absolute;
+    top: -7px;
+    left: 21px;
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 15px;
+    font-family: "Rubik", "Aria", sans-serif;
+    color: #fff;
+    text-align: center;
+    background-color: #f63;
+  }
+}
+
+.user-menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+}
+
+.user-menu__item-name {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 5px;
+    @include font($regular, $text-s)
+  }
+}
+
+.header__account {
+  display: flex;
+  align-items: center
+}
+
+.account__img {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 10px;
+  }
+}
+
+.account__name {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+    margin-right: 22px;
+    @include font($regular, $header-xs)
+  }
+}
+
+.account__btn {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    @include font($regular, $text-s)
+  }
 }

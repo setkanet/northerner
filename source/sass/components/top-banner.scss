@@ -12,9 +12,9 @@
     background-repeat: repeat-x;
     background-size: 104px 80px;
     height: 80px;
-    mix-blend-mode: multiply;
-    opacity: 0.3;
-    filter: drop-shadow(5px 11px 16px rgba(0, 0, 0, 0.2));
+    // mix-blend-mode: multiply;
+    // opacity: 0.3;
+    // filter: drop-shadow(5px 11px 16px rgba(0, 0, 0, 0.2));
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/pattern-banner-mobile@2x.webp");
@@ -34,20 +34,18 @@
     @media (min-width: $desktop) {
       background-image: url("../../img/pattern-banner.webp");
       background-size: 252px 200px;
-      height: 200px;
+      height: 206px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/pattern-banner@2x.webp");
       }
     }
-
   }
-
 }
 
 .top-banner__wrapper {
-  display: flex;
-  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .top-banner__picture {
@@ -55,30 +53,29 @@
 
   @media (min-width: $tablet) {
     display: inline-block;
-    margin-top: 26px;
+    margin-top: 27px;
+    margin-left: 76px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 0;
-    margin-left: -20px;
-  }
+    margin-top: 5px;
+    margin-left: 65px;
 
+  }
 }
 
 .top-banner__slogan {
   @include font($bold, $header-xs-desktop);
-
   margin: auto;
-  transform: translate(0%, 100%);
+  vertical-align: middle;
 
   @media (min-width: $tablet) {
     @include font($bold, $header-s-desktop);
-    margin: 0;
-    transform: none;
+    margin-left: -10px;
   }
-
 
   @media (min-width: $desktop) {
     @include font($bold, $header-l-desktop);
+    margin-left: -3px;
   }
 }

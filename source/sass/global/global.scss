@@ -12,6 +12,7 @@
 }
 
 body {
+  position: relative;
   min-width: $mobile;
   height: 100%;
   background-color: $background-page;
@@ -19,15 +20,17 @@ body {
 
 /* Links */
 
+
 a,
 a:link,
-a:visited {
+a:visited,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
+  cursor: pointer;
 }
 
-a:hover {
-  text-decoration: none;
-}
 
 /* Common */
 

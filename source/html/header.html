@@ -17,8 +17,51 @@
       <form action="">
         <label class="nav__search-label"><input class="nav__search" type="search" placeholder="Найти товар"></label>
       </form>
+      <ul class="nav__user-menu user-menu">
+        <li class="user-menu__item">
+          <a href="" class="user-menu__link">
+            <div class="user-menu__wrapper">
+              <svg aria-label="Избранное" width="24" height="24" aria-hidden="true" focusable="false" fill="currentColor">
+                <use xlink:href="./img/icons/stack.svg#heart"></use>
+              </svg>
+              <p class="user-menu__item-name">Избранное</p>
+            </div>
+          </a>
+        </li>
+        <li class="user-menu__item">
+          <a href="" class="user-menu__link">
+            <div class="user-menu__wrapper">
+              <svg aria-label="Избранное" width="24" height="24" aria-hidden="true" focusable="false" fill="currentColor">
+                <use xlink:href="./img/icons/stack.svg#orders"></use>
+              </svg>
+              <p class="user-menu__item-name">Заказы</p>
+            </div>
+          </a>
+        </li>
+        <li class="user-menu__item">
+          <a href="" class="user-menu__link">
+            <div class="user-menu__wrapper">
+              <svg aria-label="Избранное" width="24" height="24" aria-hidden="true" focusable="false" fill="currentColor">
+                <use xlink:href="./img/icons/stack.svg#shopping-cart"></use>
+              </svg>
+              <p class="user-menu__item-name">Корзина</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="header__account account">
+        <picture class="account__img">
+          <source type="image/webp" srcset="./img/avatar.webp, ./img/avatar@2x.webp 2x">
+          <img src="./img/avatar.png" srcset="./img/avatar@2x.png 2x" alt="Аватар владельца аккаунта">
+        </picture>
+        <p class="account__name">Алексей</p>
+        <button class="account__btn">
+          <svg aria-label="Открыть меню личного кабинета" width="48" height="48" aria-hidden="true" focusable="false" fill="currentColor">
+            <use xlink:href="./img/icons/stack.svg#btn-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 
-  </div>
 </header>
